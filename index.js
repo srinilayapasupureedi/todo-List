@@ -1,6 +1,6 @@
 // JavaScript code goes here
 
-const todo=[{name:"Buy Groceries",date:"2023-10-10"},];
+const todo=[{name:"Buy Groceries",date:"2025-10-01"},];
 function displayTasks() {
 let todoHTML='';
 for(let i=0;i<todo.length;i++)
