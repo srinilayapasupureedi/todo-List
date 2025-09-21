@@ -3,10 +3,8 @@
 const todo=[{name:"Buy Groceries",date:"2025-10-01"},];
 function displayTasks() {
 let todoHTML='';
-for(let i=0;i<todo.length;i++)
-{
-      const taskobj=todo[i];
-      const {name,date}=taskobj;
+todo.forEach(function(taskobj,i){
+    const {name,date}=taskobj;
       const html=`<div>${name}
       </div><div>${date}</div>
         <button class="delete-button" onclick="
@@ -15,7 +13,7 @@ for(let i=0;i<todo.length;i++)
         ">Delete</button> `;//generating html
       todoHTML+=html;
       console.log(todoHTML);
-}
+});
 document.querySelector(".taskList").innerHTML=todoHTML;
 }
 function handleTasks() {
